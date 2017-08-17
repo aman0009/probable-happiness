@@ -1,0 +1,133 @@
+<div class="card">
+    <form action="" class="form-horizontal" method="POST">
+        <div class="card-header card-header-text" data-background-color="#213">
+            <h4 class="card-title"><b>Information</b></h4>
+        </div>
+        <div class="card-content">
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Name</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{name}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Registration Number</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{regno}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Boarding</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <select class="form-control" name="boarding">
+                          <b>
+                            <option value="false" {{#if boarding}}{{else}}selected{{/if}}><b>Day-Scholar</b></option>
+                            <option value="true" {{#if boarding}}selected{{/if}}><b>Hosteler</b></option>
+                        </b>
+                        </select>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Blood Group</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{bloodGroup}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Date of Birth</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{dob}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Gender</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{gender}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Height (cms)</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <b>
+                        <input class="form-control" name="height" type="number" step="0.1" min="1" {{#if height}}value="{{height}}"{{/if}}>
+                        </b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Weight (kgs)</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <b>
+                        <input class="form-control" name="weight" type="number" step="0.1" min="1" {{#if weight}}value="{{weight}}"{{/if}}>
+                        </b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Father's Name</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{fName}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Mother's Name</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <b>
+                        <input class="form-control" name="mName" type="text" {{#if mName}}value="{{mName}}"{{/if}}>
+                        </b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-fill" type="submit"><b>Update</b></button>
+            </div>
+        </div>
+    </form>
+</div>

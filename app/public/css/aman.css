@@ -1,0 +1,26 @@
+.card [data-background-color] {
+    background-color: #213;
+    border-radius: 3px;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    margin: -20px 15px 0;
+    padding: 15px;
+    position: relative;
+}
+.card .card-footer .btn {
+    background-color: #213;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+sidebar[data-active-color="#213"] li.active > a, .off-canvas-sidebar[data-active-color=""] li.active > a {
+    background-color:#213 ;
+    box-shadow: #213;
+}
+.checkbox label, .radio label, label, .label-on-left, .label-on-right {
+    color: #213;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+}
+.sidebar[data-background-color="black"], .off-canvas-sidebar[data-background-color="black"] {
+    background-color: #213;
+}

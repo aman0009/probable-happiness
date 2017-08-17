@@ -1,0 +1,13 @@
+{{#> layout}}
+		{{> sidebar dashboardActive=true name=name image=image}}
+		<div class="main-panel">
+			{{> navbar tabName="Dashboard"}}
+			<div class="content">
+				<div class="container-fluid">
+					<div class="col-md-12">
+					{{> dashboard/card name=name registrationNumber=registrationNumber program=program department=department semester=semester evarsity=evarsity}}
+					</div>
+				</div>
+			</div>
+		</div>
+{{/layout}}

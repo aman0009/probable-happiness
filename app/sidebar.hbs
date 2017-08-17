@@ -1,0 +1,87 @@
+<div class="sidebar" data-active-color="black" data-background-color="black">
+    <div class="logo">
+        <a class="simple-text">SWE Placements</a>
+    </div>
+    <div class="logo logo-mini">
+        <a class="simple-text">PP</a>
+    </div>
+    <div class="sidebar-wrapper">
+        <div class="user">
+            <div class="photo"><img alt="avatar" src="{{#if image}}data:image/jpeg;base64, {{image}}{{else}}/img/default-avatar.png{{/if}}"></div>
+            <div class="info">
+                <a><b>{{name}}</b></a>
+            </div>
+        </div>
+        <ul class="nav">
+            {{#if academia}}
+            <li class="active">
+                <a href="/academia"><i class="material-icons">perm_identity</i>
+                <p><b>Academia</b></p></a>
+            </li>
+            {{else}}
+                {{#if dashboardActive}}
+                    <li class="active">
+                {{else}}
+                    <li>
+                {{/if}}
+                    <a href="/dashboard"><i class="material-icons">dashboard</i>
+                    <p><b>Dashboard</b></p></a>
+                </li>
+                {{#unless evarsity}}
+                    {{#if evarsityActive}}
+                        <li class="active">
+                    {{else}}
+                        <li>
+                    {{/if}}            
+                        <a href="/dashboard/evarsity"><i class="material-icons">perm_identity</i>
+                        <p>e Varsity</p></a>
+                    </li>
+                {{/unless}}
+                {{#if academicActive}}
+                    <li class="active">
+                {{else}}
+                    <li>
+                {{/if}}
+                    <a href="/dashboard/academics"><i class="material-icons">description</i>
+                    <p><b>Academic Details</b></p></a>
+                </li>
+                {{#if contactActive}}
+                    <li class="active">
+                {{else}}
+                    <li>
+                {{/if}}
+                    <a href="/dashboard/contactDetails"><i class="material-icons">contacts</i>
+                    <p><b>Contact Details</b></p></a>
+                </li>
+                {{#if personalActive}}
+                    <li class="active">
+                {{else}}
+                    <li>
+                {{/if}}
+                    <a href="/dashboard/personalDetails"><i class="material-icons">description</i>
+                    <p><b>Personal Details</b></p></a>
+                </li>
+                {{#if skillsActive}}
+                    <li class="active">
+                {{else}}
+                    <li>
+                {{/if}}
+                    <a href="/dashboard/skillsAndInterests"><i class="material-icons">worker</i>
+                    <p><b>Skills and Interests</b></p></a>
+                </li>
+                {{#if askusActive}}
+                    <li class="active">
+                {{else}}
+                    <li>
+                {{/if}}
+                    <a href="/dashboard/contactus"><i class="material-icons">question_answer</i>
+                    <p><b>Contact Us</b></p></a>
+                </li>
+            {{/if}}
+            <li>
+                <a href="/logout"><i class="material-icons">power_settings_new</i>
+                <p><b>Log out</b></p></a>
+            </li>
+        </ul>
+    </div>
+</div>

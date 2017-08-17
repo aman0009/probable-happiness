@@ -1,0 +1,148 @@
+<div class="card">
+    <form action="" class="form-horizontal" method="POST">
+        <div class="card-header card-header-text" data-background-color="#213">
+            <h4 class="card-title"><b>Information</b></h4>
+        </div>
+        <div class="card-content">
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>10th Percentage</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label><b>
+                        <input class="form-control" name="10pc" type="number" min="40" max="100" step="0.01" {{#if 10pc}}value="{{10pc}}"{{/if}}></b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>10th Board</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label><b>
+                        <input class="form-control" name="10board" type="text" {{#if 10board}}value="{{10board}}"{{/if}}></b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>12th Percentage</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label><b>
+                        <input class="form-control" name="12pc" type="number" min="40" max="100" step="0.01" {{#if 12pc}}value="{{12pc}}"{{/if}}></b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>12th Board</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <b>
+                        <input class="form-control" name="12board" type="text" {{#if 12board}}value="{{12board}}"{{/if}}>
+                        </b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Semester 1 GPA</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{sgpa1}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Semester 2 GPA</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{sgpa2}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Semester 3 GPA</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{sgpa3}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Semester 4 GPA</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{sgpa4}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Semester 5 GPA</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{sgpa5}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>CGPA</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{cgpa}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>History of Arrears</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><p><b>{{#if historyArrears}}Yes{{else}}No{{/if}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            {{#if historyArrears}}
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Standing Arrears</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{standingArrears}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            {{/if}}
+            <div class="card-footer text-center">
+                <button class="btn btn-rose btn-fill" type="submit"><b>Update</b></button>
+            </div>
+        </div>
+    </form>
+</div>

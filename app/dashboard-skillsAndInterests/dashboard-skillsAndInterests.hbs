@@ -1,0 +1,13 @@
+{{#> layout}}
+        {{> sidebar skillsActive=true name=name image=image}}
+        <div class="main-panel">
+            {{> navbar tabName="Skills and Interests"}}
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                    {{> dashboard-skillsAndInterests/card programmingLanguages=programmingLanguages languages=languages cocurricular=cocurricular extracurricular=extracurricular evarsity=evarsity}}
+                    </div>
+                </div>
+            </div>
+        </div>
+{{/layout}}

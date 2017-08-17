@@ -1,0 +1,86 @@
+<div class="card">
+    <form action="" class="form-horizontal" method="POST">
+        <div class="card-header card-header-text" data-background-color="#213">
+            <h4 class="card-title"><b>Information</b></h4>
+        </div>
+        <div class="card-content">
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Permanent Address</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{pAddress}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Current Address</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <b>
+                        <input class="form-control" name="cAddress" type="text" {{#if cAddress}}value="{{cAddress}}"{{/if}}>
+                        </b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Official Email</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <p class="form-control-static"><b>{{email}}</b></p>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Personal Email</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <b>
+                        <input class="form-control" name="pEmail" type="email" {{#if pEmail}}value="{{pEmail}}"{{/if}}>
+                        </b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Parents' Contact Number</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <b>
+                        <input class="form-control" name="parentsTel" type="text" {{#if parentsTel}}value="{{parentsTel}}"{{/if}}>
+                        </b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 label-on-left"><b>Personal Contact Number</b></label>
+                <div class="col-sm-7">
+                    <div class="form-group label-floating">
+                        <label class="control-label"></label>
+                        <b>
+                        <input class="form-control" name="personalTel" type="text" {{#if personalTel}}value="{{personalTel}}"{{/if}}>
+                        </b>
+                    </div>
+                </div>
+                <label class="col-sm-3 label-on-right">
+                </label>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-fill" type="submit"><b>Update</b></button>
+            </div>
+        </div>
+    </form>
+</div>
